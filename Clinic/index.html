@@ -1,0 +1,256 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohat Medical Center - Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-clinic-medical logo-icon"></i>
+                <h1>Kohat Medical Center</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Quality Healthcare in Kohat</h2>
+                    <p>Book your appointment with our specialists today</p>
+                    <button class="btn-primary scroll-to-booking">Book Appointment</button>
+                </div>
+                <div class="hero-image">
+                    <img src=" https://www.shutterstock.com/image-photo/medical-professional-working-hospital-he-600nw-2461211031.jpg" alt="Kohat Medical Center building exterior with clean modern facade">
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <h2 class="section-title">Book Your Appointment</h2>
+                <div class="booking-form-container">
+                    <form id="appointmentForm" class="appointment-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="General Checkup">General Checkup</option>
+                                <option value="Dental Checkup">Dental Checkup</option>
+                                <option value="Eye Examination">Eye Examination</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctor">Preferred Doctor</label>
+                            <select id="doctor" name="doctor">
+                                <option value="">Any Available Doctor</option>
+                                <option value="Dr. Ahmed Khan">Dr. Ahmed Khan (General Physician)</option>
+                                <option value="Dr. Fatima Ali">Dr. Fatima Ali (Dentist)</option>
+                                <option value="Dr. Bilal Shah">Dr. Bilal Shah (Cardiologist)</option>
+                                <option value="Dr. Aisha Malik">Dr. Aisha Malik (Dermatologist)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Appointment Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time slot</option>
+                                <option value="09:00 AM - 10:00 AM">09:00 AM - 10:00 AM</option>
+                                <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                                <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                                <option value="02:00 PM - 03:00 PM">02:00 PM - 03:00 PM</option>
+                                <option value="03:00 PM - 04:00 PM">03:00 PM - 04:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" placeholder="Any special requests or notes"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Confirm Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Cardiology</h3>
+                        <p>Comprehensive heart health assessments and treatments by our expert cardiologists.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3>Dentistry</h3>
+                        <p>Complete dental care including cleanings, fillings, and cosmetic dentistry.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Optometry</h3>
+                        <p>Vision tests, eye exams, and treatment for various eye conditions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Neurology</h3>
+                        <p>Specialized care for disorders of the nervous system and brain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="doctors-section" id="doctors">
+            <div class="container">
+                <h2 class="section-title">Our Doctors</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://st.depositphotos.com/1000423/3080/i/450/depositphotos_30809335-stock-photo-doctor-with-tablet-pc.jpg" alt="Dr. Ahmed Khan, experienced cardiologist with 15 years of practice">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Ahmed Khan</h3>
+                            <p class="specialty">Cardiologist</p>
+                            <p class="bio">Specializing in preventive cardiology and heart disease management.</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://www.kindpng.com/picc/m/238-2387387_dental-care-hd-png-download.png" alt="Dr. Fatima Ali, friendly dentist focusing on patient comfort">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Fatima Ali</h3>
+                            <p class="specialty">Dentist</p>
+                            <p class="bio">Expert in cosmetic dentistry and oral health maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://media.istockphoto.com/id/1388388021/photo/neurologist-and-neurosurgeon-talk-use-computer-analyse-patient-mri-scan-diagnose-brain-health.jpg?s=612x612&w=0&k=20&c=f6uXPeHIVvvFHSmcS38YK2bZObW-tJ2DR_XAg_Zluzo=" alt="Dr. Bilal Shah, skilled neurologist with gentle approach">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Bilal Shah</h3>
+                            <p class="specialty">Neurologist</p>
+                            <p class="bio">Specializes in migraine treatment and neurological disorders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Kohat, KPK, Pakistan</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>(091) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>kohatmedical@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <img src="https://c8.alamy.com/comp/RMNPG6/male-indian-doctor-touching-with-index-finger-medical-cross-symbol-on-invisible-screen-close-up-as-healthcare-distribution-on-world-map-concept-RMNPG6.jpg" alt="Map location of Kohat Medical Center at 456 Medical Road">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kohat Medical Center</h3>
+                    <p>Providing exceptional healthcare services with care and compassion for over 20 years.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Kohat Medical Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Appointment Confirmed!</h2>
+            <p id="confirmationDetails"></p>
+            <button class="btn-primary close-confirmation">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

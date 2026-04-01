@@ -1,0 +1,304 @@
+body {    
+    margin: 0;    
+    font-family: 'Poppins', sans-serif;    
+    background: url('https://img.freepik.com/free-vector/gradient-black-background-with-golden-textures_23-2149162753.jpg') no-repeat center center fixed;    
+    background-size: cover;    
+    color: #e0e0e0; 
+    scroll-behavior: smooth; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);  
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+    background: rgba(0, 0, 0, 0.95); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffd700;  
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #c0a050; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e0e0e0;  
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;  
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://c8.alamy.com/comp/2HBT69T/bergdorf-goodman-mens-store-is-a-luxury-holiday-shopping-destination-on-fifth-avenue-in-new-york-city-usa-2HBT69T.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero .btn {
+    padding: 1rem 2.5rem;
+    background-color: #ffd700;  
+    color: #000;  
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn:hover {
+    background-color: #c0a050;  
+    transform: scale(1.1);
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);  
+    border-radius: 20px;
+    margin: 3rem auto;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #ffd700;  
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ffd700;  
+    margin: 0.5rem auto;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.gallery .item {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);  
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.gallery img {
+    width: 100%;
+    border-bottom: 4px solid #ffd700; 
+}
+
+.gallery p {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #e0e0e0;  
+}
+
+/* Contact Section */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.contact-info li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;  
+}
+
+.contact-info a {
+    color: #ffd700;  
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #c0a050;  
+    text-decoration: underline;
+}
+
+form {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 1rem;
+    border: 1px solid #444;  
+    border-radius: 30px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);  
+    color: #e0e0e0;  
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ffd700;  
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+form button {
+    background: #ffd700; 
+    color: #000;  
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background: #c0a050;  
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9); 
+    color: #e0e0e0;  
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-radius: 20px 20px 0 0;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: rgba(0, 0, 0, 0.95);  
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff4500; /* Change color on hover */
+}
+
+/* Specific colors for each social media */
+.social-media a .fa-facebook {
+    color: #1877F2; /* Facebook blue */
+}
+
+.social-media a .fa-instagram {
+    color: #E4405F; /* Instagram gradient color */
+}
+
+.social-media a .fa-tiktok {
+    color: #000000; /* TikTok black */
+}
+
+}

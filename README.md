@@ -27,9 +27,10 @@ This project showcases my skills, projects, and contact information in a simple 
 
 ---
 
-## 📂 Project Structure
+ ## 📂 Project Structure
 
- my-bootstrap-portfolio-2
+
+my-bootstrap-portfolio-2/
 │
 ├── index.html # Main portfolio page
 ├── portfolio.css # Custom styling
@@ -37,17 +38,16 @@ This project showcases my skills, projects, and contact information in a simple 
 │ ├── profile.png
 │ ├── boutique.png
 │ └── clinic.png
+│
 ├── boutique/ # Boutique project folder
 │ ├── index.html
 │ ├── style.css
 │ └── script.js
+│
 └── clinic/ # Clinic project folder
 ├── index.html
 ├── style.css
 └── script.js
-
-
----
 
 ## ▶️ How to Run
 

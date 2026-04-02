@@ -1,0 +1,21 @@
+     body {
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      transition: 0.3s;
+      border: none;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    #skills {
+      background-color: #f8f9fa;
+    }
+
+    #projects {
+      background-color: #ffffff;
+    }
